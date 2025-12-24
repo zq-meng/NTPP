@@ -12,9 +12,10 @@
 <!-- <embed src="assert/audio-introduction.pdf" width="620" height="500" type="application/pdf"> -->
 
 Key features:
-- Pre-training: Transform single-channel audio into discrete tokens for next-token prediction
-- SFT: Novel "next-token-pair prediction" objective for natural conversation comprehension
-- Result: More natural and fluid spoken interactions compared to baseline approaches
+- Pre-training: Transform single-channel audio into discrete tokens for next-token prediction (We train tokenizers from scratch in the original paper version)
+  -(Updated: Directly use Higgs Audio Language Model as base model.)   
+- Continual Training: Novel "next-token-pair prediction" objective for natural dual-channnel speech comprehension (supporting both VQ tokenzer and RVQ tokenizer)
+- Inference: Naturally generating spoken dialogues in a streaming way; User-computer interaction could be modeled by regarding one speaker channel as given input. 
 
 <img src="https://pub-ad90b2169561455ea151c5176b67b638.r2.dev/2025/07/20250707172902461.png" alt="Parrot" width="500"/>
 
